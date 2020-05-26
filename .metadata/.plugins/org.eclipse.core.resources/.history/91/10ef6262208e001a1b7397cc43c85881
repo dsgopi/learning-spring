@@ -1,0 +1,5 @@
+package com.projects.learning.acctmgmt.controller;
+
+public class AccountMgmtController {
+
+}

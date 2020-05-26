@@ -1,0 +1,20 @@
+package com.projects.app.users.dto;
+
+import java.io.Serializable;
+
+public class UserDetailsDto implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8803879421827940426L;
+	
+	private String userID;
+	private String firstName;
+	private String lastName;
+	private String username;
+	private String encryptedPassword;
+	
+	
+
+}

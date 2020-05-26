@@ -1,0 +1,12 @@
+package com.projects.app.users.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
+
+@Mapper
+public class UsersMapper {
+
+	
+	UsersMapper userMapper = Mappers.getMapper(UsersMapper.class);
+	
+}

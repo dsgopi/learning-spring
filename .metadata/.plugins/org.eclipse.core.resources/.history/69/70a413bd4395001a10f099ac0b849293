@@ -1,0 +1,45 @@
+package com.projects.app.users.view.mappers;
+
+import com.projects.app.users.dto.UserDetailsDto;
+import com.projects.app.users.view.model.CreateUserRequestModel;
+import com.projects.app.users.view.model.CreateUserResponseModel;
+import javax.annotation.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2020-05-13T12:15:45-0400",
+    comments = "version: 1.3.1.Final, compiler: Eclipse JDT (IDE) 3.21.0.v20200304-1404, environment: Java 14.0.1 (Oracle Corporation)"
+)
+@Component
+public class UsersModelMapperImpl implements UsersModelMapper {
+
+    @Override
+    public UserDetailsDto userModelToDto(CreateUserRequestModel userModel) {
+        if ( userModel == null ) {
+            return null;
+        }
+
+        UserDetailsDto userDetailsDto = new UserDetailsDto();
+
+        userDetailsDto.setUsername( userModel.getEmail() );
+        userDetailsDto.setUserID( userModel.getUserID() );
+        userDetailsDto.setFirstName( userModel.getFirstName() );
+        userDetailsDto.setLastName( userModel.getLastName() );
+
+        return userDetailsDto;
+    }
+
+    @Override
+    public CreateUserResponseModel userDtoToUserResponse(UserDetailsDto userDetailsDto) {
+        if ( userDetailsDto == null ) {
+            return null;
+        }
+
+        CreateUserResponseModel createUserResponseModel = new CreateUserResponseModel();
+
+        createUserResponseModel.setUserID( userDetailsDto.getUserID() );
+
+        return createUserResponseModel;
+    }
+}

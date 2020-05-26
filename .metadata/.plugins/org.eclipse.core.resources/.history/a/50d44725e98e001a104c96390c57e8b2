@@ -1,0 +1,7 @@
+package com.projects.app.users.dto;
+
+import java.io.Serializable;
+
+public class UserDetailsDto implements Serializable {
+
+}

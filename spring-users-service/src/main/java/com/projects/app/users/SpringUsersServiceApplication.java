@@ -3,6 +3,10 @@ package com.projects.app.users;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.Bean;
+
+import com.projects.app.users.mapper.UsersMapper;
+import com.projects.app.users.view.mappers.UsersModelMapper;
 
 @SpringBootApplication
 @EnableDiscoveryClient
@@ -11,5 +15,17 @@ public class SpringUsersServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringUsersServiceApplication.class, args);
 	}
-
+	
+//	@Bean
+//	UsersMapper createUsersMapper() {
+//		
+//		return UsersMapper.INSTANCE;
+//	}
+//
+//	@Bean
+//	UsersModelMapper createUsersModelMapper() {
+//		
+//		return UsersModelMapper.INSTANCE;
+//	}
+	
 }

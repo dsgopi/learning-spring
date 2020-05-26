@@ -1,0 +1,7 @@
+package com.projects.app.users.view.model;
+
+import java.io.Serializable;
+
+public class CreateUserRequestModel implements Serializable {
+
+}

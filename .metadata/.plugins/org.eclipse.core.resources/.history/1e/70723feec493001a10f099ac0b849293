@@ -1,0 +1,13 @@
+package com.projects.app.users.service;
+
+import com.projects.app.users.dto.UserDetailsDto;
+
+public class UsersServiceImpl implements UsersServiceInterface {
+
+	@Override
+	public String createUser(UserDetailsDto userDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

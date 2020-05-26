@@ -1,0 +1,24 @@
+package com.test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class TestJavaClass2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "Hi Hello";
+		char[] vowels = {'a','e','i','o'};
+		ArrayList<Character> charsToCheck = Arrays.asList(); 
+		char[] chars = str.toCharArray();
+		
+		Arrays.asList(chars).stream().filter(c->
+		
+		
+		
+		System.out.println(str.trim());
+		
+	}
+
+}

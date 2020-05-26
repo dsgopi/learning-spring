@@ -1,0 +1,20 @@
+package com.projects.app.users.view.mappers;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.springframework.stereotype.Component;
+
+import com.projects.app.users.dto.UserDetailsDto;
+import com.projects.app.users.view.model.CreateUserRequestModel;
+import com.projects.app.users.view.model.CreateUserResponseModel;
+
+@Mapper
+@Component
+public interface UsersModelMapper {
+
+	@Mapping(source = "email", target = "username")
+	UserDetailsDto userModelToDto(CreateUserRequestModel userModel);
+	
+	
+	CreateUserResponseModel userDtoToUserResponse(UserDetailsDto userDetailsDto);
+}

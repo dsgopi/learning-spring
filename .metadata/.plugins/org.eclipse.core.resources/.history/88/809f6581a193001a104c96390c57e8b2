@@ -1,0 +1,8 @@
+package com.projects.app.users.service;
+
+
+public interface UsersServiceInterface {
+	
+	public String createUser(UserDTO userDetails);
+
+}

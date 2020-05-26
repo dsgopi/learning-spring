@@ -1,0 +1,16 @@
+package com.test;
+
+public class TestJavaClass2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str = "             Hi Hello";
+		
+		
+		
+		System.out.println(str.trim());
+		
+	}
+
+}

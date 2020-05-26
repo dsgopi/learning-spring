@@ -1,0 +1,49 @@
+package com.projects.app.users.mapper;
+
+import com.projects.app.users.data.UserEntity;
+import com.projects.app.users.dto.UserDetailsDto;
+import javax.annotation.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2020-05-13T12:15:45-0400",
+    comments = "version: 1.3.1.Final, compiler: Eclipse JDT (IDE) 3.21.0.v20200304-1404, environment: Java 14.0.1 (Oracle Corporation)"
+)
+@Component
+public class UsersMapperImpl implements UsersMapper {
+
+    @Override
+    public UserEntity userDtoToUserEntity(UserDetailsDto userDetailsDto) {
+        if ( userDetailsDto == null ) {
+            return null;
+        }
+
+        UserEntity userEntity = new UserEntity();
+
+        userEntity.setUserID( userDetailsDto.getUserID() );
+        userEntity.setFirstName( userDetailsDto.getFirstName() );
+        userEntity.setLastName( userDetailsDto.getLastName() );
+        userEntity.setUsername( userDetailsDto.getUsername() );
+        userEntity.setEncryptedPassword( userDetailsDto.getEncryptedPassword() );
+
+        return userEntity;
+    }
+
+    @Override
+    public UserDetailsDto userEntityToDto(UserEntity userEntity) {
+        if ( userEntity == null ) {
+            return null;
+        }
+
+        UserDetailsDto userDetailsDto = new UserDetailsDto();
+
+        userDetailsDto.setUserID( userEntity.getUserID() );
+        userDetailsDto.setFirstName( userEntity.getFirstName() );
+        userDetailsDto.setLastName( userEntity.getLastName() );
+        userDetailsDto.setUsername( userEntity.getUsername() );
+        userDetailsDto.setEncryptedPassword( userEntity.getEncryptedPassword() );
+
+        return userDetailsDto;
+    }
+}

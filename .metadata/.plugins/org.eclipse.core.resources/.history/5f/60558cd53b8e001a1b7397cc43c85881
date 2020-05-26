@@ -1,0 +1,5 @@
+package com.projects.accounts.mgmt.controllers;
+
+public class AccountsManagementController {
+
+}

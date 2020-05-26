@@ -1,0 +1,7 @@
+package com.projects.app.users.view.model;
+
+public class CreateUserResponseModel {
+	private String userID;
+	private String email;
+
+}

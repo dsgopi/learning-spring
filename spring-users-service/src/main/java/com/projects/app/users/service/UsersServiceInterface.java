@@ -4,6 +4,6 @@ import com.projects.app.users.dto.UserDetailsDto;
 
 public interface UsersServiceInterface {
 	
-	public String createUser(UserDetailsDto userDetails);
+	public UserDetailsDto createUser(UserDetailsDto userDetails);
 
 }

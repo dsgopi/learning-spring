@@ -1,0 +1,25 @@
+package com.projects.app.users.service;
+
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.projects.app.users.data.UserEntity;
+import com.projects.app.users.dto.UserDetailsDto;
+import com.projects.app.users.mapper.UsersMapper;
+
+public class UsersServiceImpl implements UsersServiceInterface {
+	
+	@Autowired
+	UsersMapper usersMapper;
+
+	@Override
+	public String createUser(UserDetailsDto userDetails) {
+
+		userDetails.setUserID(UUID.randomUUID().toString());
+		userDetails.setEncryptedPassword("encrypted password");
+		UserEntity userEntity = usersMapper.userDtoToUserEntity(userDetails);
+		return null;
+	}
+
+}

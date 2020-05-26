@@ -1,0 +1,21 @@
+package com.projects.app.users.view.model;
+
+import java.io.Serializable;
+
+public class CreateUserRequestModel implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 551803454205416480L;
+
+
+	private String userID;
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	private String email;
+
+}

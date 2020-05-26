@@ -1,0 +1,26 @@
+package com.projects.app.users.view.model;
+
+import java.io.Serializable;
+
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+
+public class CreateUserRequestModel implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 551803454205416480L;
+
+	@NotNull
+
+	private String userID;
+	
+	private String firstName;
+	
+	private String lastName;
+	
+	@Email
+	private String email;
+
+}

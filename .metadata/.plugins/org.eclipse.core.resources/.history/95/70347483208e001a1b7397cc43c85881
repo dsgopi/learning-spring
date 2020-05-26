@@ -1,0 +1,13 @@
+package com.projects.learning.acctmgmt.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/acctmgmt")
+public class AccountMgmtController {
+	
+	public String status() {
+		
+		return "AcctMgmt Working..";
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.projects.app.users.view.mappers.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class UserModelMapperTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

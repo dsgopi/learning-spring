@@ -1,0 +1,12 @@
+package com.projects.app.users.mapper;
+
+import org.mapstruct.Mapper;
+
+import com.projects.app.users.data.UserEntity;
+import com.projects.app.users.dto.UserDetailsDto;
+
+@Mapper
+public interface UsersMapper {
+	
+	UserEntity userDtoToUserEntity(UserDetailsDto userDetailsDto);
+}

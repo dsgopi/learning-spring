@@ -1,0 +1,13 @@
+package com.projects.app.users.view.mappers;
+
+import com.projects.app.users.dto.UserDetailsDto;
+import com.projects.app.users.view.model.CreateUserRequestModel;
+import com.projects.app.users.view.model.CreateUserResponseModel;
+
+public interface UsersModelMapper {
+
+	UserDetailsDto userModelToDto(CreateUserRequestModel userModel);
+	
+	
+	CreateUserResponseModel userDtoToUserResponse(UserDetailsDto);
+}

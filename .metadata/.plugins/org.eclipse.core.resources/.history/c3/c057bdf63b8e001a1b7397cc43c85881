@@ -1,0 +1,13 @@
+package com.projects.accounts.mgmt.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController("/acctmgmt")
+public class AccountsManagementController {
+	
+	public String health() {
+		
+		return "Accounts Management Working...";
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.projects.app.users.view.model;
+
+public class CreateUserResponseModel {
+
+}
